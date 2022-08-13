@@ -18,22 +18,22 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) =>
 {
 	res.render('index', {
-		title: 'My title',
+		title: 'El clima',
 		name: 'Jazmin Medina'
 	})
 })
 app.get('/about', (req, res) =>
 {
 	res.render('about', {
-		title: 'Conocenos!',
+		title: 'Conocenos',
 		name: 'Jazmin Medina'
 	})
 })
 app.get('/help', (req, res) =>
 {
 	res.render('help', {
-		helpText: 'holi',
-		title: 'Help',
+		helpText: '¿Cómo funciona el sitio?',
+		title: 'Ayuda',
 		name: 'Jazmin Medina'
 	})
 })
@@ -70,7 +70,7 @@ app.get('/help/*', (req, res) =>
 	res.render('404', {
 		title: '404',
 		name: 'Jazmin Medina',
-		errorMessage: 'Help article not found.'
+		errorMessage: 'Página de ayuda no encontrada'
 	})
 })
 
@@ -79,7 +79,7 @@ app.get('*', (req, res) =>
 	res.render('404', {
 		title: '404',
 		name: 'Jazmin Medina',
-		errorMessage: 'Page not found.'
+		errorMessage: 'Página no encontrada'
 	})
 })
 app.listen(3000, () =>

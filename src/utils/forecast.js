@@ -14,7 +14,7 @@ const forecast = (ciudad, callback) =>
 			callback('No se puede encontrar la ubicación', undefined)
 		} else
 		{
-			callback(undefined, response.body.location.name + ', ' + response.body.location.region + ', ' + response.body.location.country + '. Local time is ' + response.body.location.localtime + '. Weather ' + response.body.current.weather_descriptions[0] + '. Actual Temp: ' + response.body.current.temperature + ' celsius. Humidity: ' + response.body.current.humidity + ' grados')
+			callback(undefined, 'Región: ' + response.body.location.region + '. País: ' + response.body.location.country + '. Hora Local: ' + response.body.location.localtime + '. Clima: ' + response.body.current.weather_descriptions[0] + '. Temperatura real: ' + response.body.current.temperature + ' celsius. Humedad: ' + response.body.current.humidity + ' grados')
 		}
 	})
 }

@@ -29,6 +29,13 @@ header {
 h1 {
 	font-size: 64px;
 	margin-bottom: 16px;
+	color: #5373fc;
+	margin-top: 2px;
+}
+
+h3,
+h4 {
+	color: #F1C049;
 }
 
 header a {
@@ -41,15 +48,44 @@ header a {
 	width: 250px;
 }
 
+.small {
+	width: 200px;
+	margin-top: 10px;
+}
+
 input {
-	border: 1px solid #cccccc;
-	padding: 8px;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	color: #495057;
+	padding: .5rem 1rem;
+	font-size: 1rem;
+}
+
+.form-control:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #80bdff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
 }
 
 button {
 	cursor: pointer;
-	border: 1px solid #888888;
-	background: #888888;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	background: #5373fc;
+	border-color: #7a92fd;
 	color: white;
-	padding: 8px;
+	padding: 9px;
 }
+
+button:hover {
+	background-color: #0069D8;
+	border-color: #0062cc;
+}
+
+button:focus {
+	box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
+}
+
+a {}

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Help</title>
+	<title>Ayuda</title>
 	<link rel="icon" href="/img/weather.png">
 	<link rel="stylesheet" href="/css/styles.css">
 
@@ -11,7 +11,24 @@
 <body>
 	<div class="main-content">
 		{{>header}}
-		<p> {{helpText}}</p>
+		<h4> {{helpText}}</h4>
+		<p>Deberas ingresar alguno de los siguiente datos para obtener los datos meteorológicos en tiempo real a nivel
+			mundial:
+		</p>
+		<ul>
+			<li>Nombre del lugar</li>
+			<li>Código postal</li>
+			<li>Coordenadas (Lat/Lon)</li>
+			<li>Dirección IP</li>
+		</ul>
+		<h4>¿Qué información voy a obtener?</h4>
+		<ul>
+			<li>País</li>
+			<li>Región </li>
+			<li>Hora local</li>
+			<li>Temperatura real</li>
+			<li>Humedad</li>
+		</ul>
 	</div>
 
 	{{>footer}}
